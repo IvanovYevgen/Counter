@@ -1,16 +1,14 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import TodoList from "./TodoList";
 
 
+
+var destination = document.querySelector("#container");
 ReactDOM.render(
-  <React.StrictMode>
-    <div>
-      <App />
-    </div>
-  </React.StrictMode>,
-  document.getElementById('root')
+  <div>
+    <TodoList />
+  </div>,
+  destination
 );
-
-
